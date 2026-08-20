@@ -25,10 +25,18 @@
     },
     {
         "id": 5,
-        "date": "17-08-2026",
+        "date": "18-08-2026",
         "category": "Education",
-        "description": "book purchase",
-        "amount": 200.0,
+        "description": "books (new)",
+        "amount": 250.0,
+        "type": "expense"
+    },
+    {
+        "id": 6,
+        "date": "19-08-2026",
+        "category": "Food",
+        "description": "Biryani",
+        "amount": 150.0,
         "type": "expense"
     }
 ]
