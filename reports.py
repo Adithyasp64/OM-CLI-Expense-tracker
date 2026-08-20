@@ -42,7 +42,7 @@ def get_monthly_summary(expenses):
     summary = {}
 
     for expense in expenses:
-        month = expense.date[:7:-1]
+        month = expense.date
 
         if month not in summary:
             summary[month] = 0
