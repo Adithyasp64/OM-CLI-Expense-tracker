@@ -1,24 +1,10 @@
 from expense import Expense
-from storage import save_expenses, load_expenses
+from reports import calculate_total_income
 
-expenses = []
+expenses = [
+    Expense(1, "2026-08-19", "Other", "Salary", 5000, "income"),
+    Expense(2, "2026-08-19", "Food", "Lunch", 180, "expense"),
+    Expense(3, "2026-08-19", "Other", "Freelance", 11000, "income")
+]
 
-expense = Expense(
-    1,
-    "2026-08-19",
-    "Food",
-    "Lunch",
-    180.0,
-    "expense"
-)
-
-expenses.append(expense)
-
-print("Saving...")
-print(save_expenses(expenses))
-
-print("Loading...")
-loaded_expenses = load_expenses()
-
-for expense in loaded_expenses:
-    print(expense)
+print(calculate_total_income(expenses))
